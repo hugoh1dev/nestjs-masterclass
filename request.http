@@ -1,0 +1,26 @@
+GET  http://localhost:3000/user
+
+###
+GET  http://localhost:3000/user/1
+
+###
+DELETE  http://localhost:3000/user/2
+
+###
+POST http://localhost:3000/user
+content-type: application/json
+
+{
+    "name": "Milena Oliveira de Araujo",
+    "email": "milenaaaa@formation.dev",
+    "password": "1234561"
+}
+
+###
+PATCH http://localhost:3000/user/1
+content-type: application/json
+
+{
+    "name": "Richard Hugo Brito Araujo",
+    "email": "richardhugodev@formation.dev"
+}
